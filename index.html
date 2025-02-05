@@ -1,0 +1,56 @@
+<!-- 
+		Name: Mak Poling
+		Date: 6/16/2023
+		Class: CSCI2447, Javascript Fundamentals
+		Project 2
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Destroid</title>
+
+	<link href="css/game.css" rel="stylesheet" />
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<div id="content">
+
+		<h1>Destroid</h1>
+
+		<p id="player_welcome"></p>
+
+		<p id="directions">After clicking "Start" you will have 30 seconds to destroy as many asteroids as you can.
+			Click the asteroids to destroy them. Earn 1 point for every asteroid you destroy.</p>
+
+		<div id="controls">
+			<span id="score">Score: 0 pts</span>
+			<button type="button" id="start_button">Start!</button>
+		</div>
+
+		<div id="timer" class="hidden">30 seconds left</div>
+
+
+
+		<div id="gamespace">
+
+
+		</div>
+
+	</div><!--ends content div -->
+	
+	<footer></footer>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("footer").load("load.html");
+		});
+	</script>
+</body>
+
+</html>
+<!-- 10/28/21 -->
